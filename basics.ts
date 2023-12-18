@@ -22,10 +22,12 @@ let hobbies: string[];
 
 hobbies = ["Games", "Cooking"];
 
-let person: {
+type Person = {
   name: string;
   age: number;
 };
+
+let person: Person;
 
 person = {
   name: "Gab",
@@ -36,7 +38,10 @@ person = {
 //   isEmployee: true,
 // };
 
-let people: {
-  name: string;
-  age: number;
-}[];
+let people: Person[];
+
+// type inference
+
+let title: string | number = "Job market in tech - 2023";
+
+title = 1234568789;
