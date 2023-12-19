@@ -45,3 +45,15 @@ let people: Person[];
 let title: string | number = "Job market in tech - 2023";
 
 title = 1234568789;
+
+// Functions & types
+
+function add(a: number, b: number): number | string {
+  return a + b;
+}
+
+console.log(add(5, 6));
+
+function printOut(value: any) {
+  console.log(value);
+}
